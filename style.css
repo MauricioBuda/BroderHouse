@@ -119,6 +119,10 @@ a{
   .ul-menu li a:hover{
     text-shadow: 1px 1px 12px yellow;
   }
+
+  .ul-menu li a:active{
+    text-shadow: 1px 1px 12px yellow;
+  }
   
 }
 /* FIN NAV BAR ↑ */
