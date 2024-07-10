@@ -47,39 +47,72 @@ body, html {
 
 
 /* INICIO NAV BAR ↓ */
-.navbar{
-  padding: 0;
-  height: 14vh;
-}
-
-.container-fluid{
+.div-navbar{
   display: flex;
-  justify-content: end!important;
+  justify-content:space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0;
+  height: 12vh;
 }
 
-.navbar-collapse{
-  flex-grow: 0;
-}
-
-.logo{
-  margin-left: 2vw;
+.logo-menu{
   width: 8vw;
+  margin-left: 2vw;
 }
 
-.bg-body-tertiary{
-  background-color: black!important;
+a{
+  text-decoration: none;
 }
 
-.navbar-nav{
-  gap: 2vw;
+.ul-menu{
+  display: flex;
+  gap: 3vw;
+  margin-right: 2vw;
+  list-style: none;
 }
 
-.nav-link{
-  color: white!important;
+.ul-menu li a{
   font-size: 1.5vw;
+  color: white;
 }
 
-.nav-link:hover{
-  text-shadow: 2px 2px 15px yellow;
+.ul-menu li a:hover{
+  text-shadow: 1px 1px 12px yellow;
+}
+
+.ul-menu li a:active{
+  text-shadow: 1px 1px 12px yellow;
+}
+
+
+
+
+@media screen and (max-width: 524px) {
+  .div-navbar{
+    height: 8vh;
+  }
+  
+  .logo-menu{
+    width: 12vw;
+    margin-left: 3vw;
+  }
+
+
+  
+  .ul-menu{
+    margin: 0;
+    gap: 5vw;
+    margin-right: 3vw;
+  }
+  
+  .ul-menu li a{
+    font-size: 2.1vw;
+  }
+  
+  .ul-menu li a:hover{
+    text-shadow: 1px 1px 12px yellow;
+  }
+  
 }
 /* FIN NAV BAR ↑ */
