@@ -42,8 +42,6 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
 /* IFIN VIDEO ↑ */
 
 
@@ -57,9 +55,10 @@ body, html {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   padding: 0;
   height: 12vh;
+  z-index: 2;
 }
 
 .logo-menu{
@@ -126,12 +125,19 @@ a{
 
 
 
+.section {
+  scroll-margin-top: 14vh; 
+}
+
+
+
+
 
 /* INICIO CURSOS ↓ */
 .section-cursos{
   margin-top: 50vh;
   position: relative;
-  padding: 50px 0; /* Añadir un poco de padding para separación visual */
+  padding: 50px 0; 
   z-index: 1;
 }
 
@@ -160,6 +166,7 @@ a{
 
  /* INICIO SOBRE NOSOTROS ↓ */
  .section-sobre-nosotros{
+  /* padding-top: 12vh; */
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -177,5 +184,50 @@ a{
   text-align: center;
   align-items: center;
  }
-
  /* FIN SOBRE NOSOTROS ↑ */
+
+
+
+
+
+
+ /* INICIO CONTACTO */
+ .section-contacto{
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  position: relative;
+  padding: 50px 0;
+  z-index: 1;
+}
+
+.h1-contacto{
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.div-contacto{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 6vw;
+}
+
+.svg-contacto{
+  width: 2vw;
+}
+.div-contacto a{
+  text-align: center;
+  gap: 1vh;
+}
+
+
+@media screen and (max-width: 524px) {
+  .div-contacto{
+    gap: 12vw;
+  }
+
+  .svg-contacto{
+    width: 10vw;
+  }
+}
+ /* FIN CONTACTO */
