@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 /* FIN GENERAL ↑ */
 
@@ -13,11 +13,11 @@ body, html {
 
 /* INICIO VIDEO ↓ */
 .video-container {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   z-index: -1;
 }
@@ -30,16 +30,20 @@ body, html {
 }
 
 .content {
-  position: relative;
+  position: absolute;
+  margin: auto;
   z-index: 1;
   color: white;
   text-align: center;
-  margin-top: 20%;
   background-color: rgba(0, 0, 0, 0.088);
-  margin-inline: auto;
   width: fit-content;
   border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+
 /* IFIN VIDEO ↑ */
 
 
@@ -48,6 +52,8 @@ body, html {
 
 /* INICIO NAV BAR ↓ */
 .div-navbar{
+  position: sticky;
+  top: 0%;
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -90,7 +96,7 @@ a{
 
 @media screen and (max-width: 524px) {
   .div-navbar{
-    height: 10vh;
+    height: 8vh;
   }
   
   .logo-menu{
@@ -116,3 +122,60 @@ a{
   
 }
 /* FIN NAV BAR ↑ */
+
+
+
+
+
+/* INICIO CURSOS ↓ */
+.section-cursos{
+  margin-top: 50vh;
+  position: relative;
+  padding: 50px 0; /* Añadir un poco de padding para separación visual */
+  z-index: 1;
+}
+
+.div-cursos{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.div-cursos h1{
+  background-color: rgba(255, 0, 0, 0.253);
+  text-align: center;
+  gap: 1vh;
+}
+/* FIN CURSOS ↑ */
+
+
+
+
+
+
+
+
+
+
+
+ /* INICIO SOBRE NOSOTROS ↓ */
+ .section-sobre-nosotros{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50vh;
+  text-align: center;
+  background-color: rgba(0, 128, 0, 0.361);
+  justify-content: center;
+ }
+
+ .section-sobre-nosotros p{
+  justify-content: center;
+  width: 40%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+ }
+
+ /* FIN SOBRE NOSOTROS ↑ */
