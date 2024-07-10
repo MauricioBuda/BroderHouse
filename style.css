@@ -190,6 +190,9 @@ a{
  }
 
  @media screen and (max-width: 524px) {
+  .section-sobre-nosotros{
+    margin-inline: 3vw;
+  }
   .section-sobre-nosotros p{
     width: 80%;
    }
