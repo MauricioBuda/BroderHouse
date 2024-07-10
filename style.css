@@ -4,6 +4,7 @@ body, html {
   padding: 0;
   height: 100%;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 /* FIN GENERAL ↑ */
 
@@ -151,6 +152,8 @@ a{
   background-color: rgba(255, 0, 0, 0.253);
   text-align: center;
   gap: 1vh;
+  border-radius: 15px;
+  margin-inline: 3vw;
 }
 /* FIN CURSOS ↑ */
 
@@ -166,7 +169,6 @@ a{
 
  /* INICIO SOBRE NOSOTROS ↓ */
  .section-sobre-nosotros{
-  /* padding-top: 12vh; */
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -175,14 +177,22 @@ a{
   text-align: center;
   background-color: rgba(0, 128, 0, 0.361);
   justify-content: center;
+  margin-inline: 25vw;
+  border-radius: 15px;
  }
 
  .section-sobre-nosotros p{
   justify-content: center;
-  width: 40%;
+  width: 60%;
   display: flex;
   text-align: center;
   align-items: center;
+ }
+
+ @media screen and (max-width: 524px) {
+  .section-sobre-nosotros p{
+    width: 80%;
+   }
  }
  /* FIN SOBRE NOSOTROS ↑ */
 
