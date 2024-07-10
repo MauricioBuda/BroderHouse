@@ -90,11 +90,11 @@ a{
 
 @media screen and (max-width: 524px) {
   .div-navbar{
-    height: 8vh;
+    height: 10vh;
   }
   
   .logo-menu{
-    width: 12vw;
+    width: 16vw;
     margin-left: 3vw;
   }
 
@@ -102,12 +102,12 @@ a{
   
   .ul-menu{
     margin: 0;
-    gap: 5vw;
+    gap: 4vw;
     margin-right: 3vw;
   }
   
   .ul-menu li a{
-    font-size: 2.1vw;
+    font-size: 2.5vw;
   }
   
   .ul-menu li a:hover{
