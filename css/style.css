@@ -4,11 +4,17 @@ body, html {
   padding: 0;
   height: 100%;
   overflow: auto;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 a{
   text-decoration: none;
+}
+
+@media screen and (max-width: 524px) {
+  body, html {
+    scroll-behavior: unset;
+  }
 }
 /* FIN GENERAL ↑ */
 
