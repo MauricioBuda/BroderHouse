@@ -126,9 +126,25 @@ a{
 
 
 
+
+
+
+
+
 .section {
   scroll-margin-top: 14vh; 
 }
+
+@media screen and (max-width: 524px) {
+  .section {
+    scroll-margin-top: 10vh; 
+  }
+}
+
+
+
+
+
 
 
 
