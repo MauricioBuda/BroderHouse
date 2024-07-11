@@ -4,7 +4,7 @@ body, html {
   padding: 0;
   height: 100%;
   overflow: auto;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 a{
@@ -162,7 +162,7 @@ a{
 
 /* INICIO CURSOS ↓ */
 .section-cursos{
-  margin-top: 50vh;
+  margin-top: 30vh;
   position: relative;
   /* padding: 12vh 0; */
 }
@@ -201,7 +201,7 @@ a{
   text-align: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 50vh;
+  margin-top: 60vh;
   text-align: center;
   justify-content: center;
   margin-inline: 25vw;
