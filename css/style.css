@@ -67,6 +67,7 @@ body, html {
   margin-left: 2vw;
 }
 
+
 a{
   text-decoration: none;
 }
@@ -84,11 +85,9 @@ a{
 }
 
 .ul-menu li a:hover{
-  text-shadow: 1px 1px 12px yellow;
-}
-
-.ul-menu li a:active{
-  text-shadow: 1px 1px 12px yellow;
+  text-shadow: 
+  0px 0px 20px yellow,
+  0px 0px 25px yellow;
 }
 
 
@@ -120,9 +119,6 @@ a{
     text-shadow: 1px 1px 12px yellow;
   }
 
-  .ul-menu li a:active{
-    text-shadow: 1px 1px 12px yellow;
-  }
   
 }
 /* FIN NAV BAR ↑ */
