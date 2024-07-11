@@ -164,7 +164,7 @@ a{
 .section-cursos{
   margin-top: 30vh;
   position: relative;
-  /* padding: 12vh 0; */
+  padding: 12vh 0;
 }
 
 .div-cursos{
@@ -196,7 +196,7 @@ a{
 
  /* INICIO SOBRE NOSOTROS ↓ */
  .section-sobre-nosotros{
-  /* padding: 12vh 0;  */
+  padding: 12vh 0; 
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -238,7 +238,7 @@ a{
   margin-top: 50vh;
   margin-bottom: 50vh;
   position: relative;
-  /* padding: 12vh 0; */
+  padding: 12vh 0;
   /* z-index: 1; */
 }
 
