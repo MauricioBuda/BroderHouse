@@ -94,6 +94,7 @@ a{
 .ul-menu li a{
   font-size: 1.5vw;
   color: white;
+  padding: 2px;
 }
 
 .ul-menu li a:hover{
@@ -179,7 +180,6 @@ a{
 .div-cursos h1{
   background-color: rgba(255, 0, 0, 0.253);
   text-align: center;
-  gap: 1vh;
   border-radius: 15px;
   margin-inline: 3vw;
 }
