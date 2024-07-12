@@ -25,14 +25,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
 
-    // Función para vaciar campos
-    function vaciarCamposFormulario() {
-        document.getElementById('name').value = "";
-        document.getElementById('phone').value = "";
-        document.getElementById('message').value = "";
-        document.getElementById('email').value = "";
-    } 
-
 
 
     // Enviar el correo electrónico
@@ -47,7 +39,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
                 timer: 1500
               });
 
-              vaciarCamposFormulario();
+              setTimeout(() => {
+                location.reload();
+              }, 1400);
 
         }, function(error) {
             console.log('FAILED...', error);

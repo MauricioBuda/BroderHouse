@@ -5,6 +5,7 @@ body, html {
   height: 100%;
   overflow: auto;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 a{
@@ -35,7 +36,7 @@ a{
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  z-index: -1;
+  z-index: 1;
 }
 
 #video-inicio {
@@ -80,7 +81,7 @@ a{
   background-color: rgb(0, 0, 0);
   padding: 0;
   height: 12vh;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo-menu{
@@ -147,15 +148,6 @@ a{
 
 
 
-/* .section {
-  scroll-margin-top: 14vh; 
-}
-
-@media screen and (max-width: 524px) {
-  .section {
-    scroll-margin-top: 10vh; 
-  }
-} */
 
 
 
@@ -168,26 +160,94 @@ a{
 
 /* INICIO CURSOS ↓ */
 .section-cursos{
+  display: flex;
+  flex-direction: column;
   margin-top: 30vh;
   position: relative;
   padding: 12vh 0;
 }
 
+.h1-cursos{
+  text-align: center;
+  color: white;
+}
+
 .div-cursos{
   display: flex;
-  flex-direction: column;
+  overflow:hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   }
 
-.div-cursos h1{
+.div-curso{
+  background-color: rgba(255, 255, 255, 0.075);
+  width: 30%;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 1rem 3rem;
+}
+
+.div-cursos h2{
+  color: white;
   display: flex;
   height: 5vh;
-  background-color: rgba(255, 0, 0, 0.253);
   text-align: center;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
   margin-inline: 3vw;
 }
+
+.div-cursos p{
+  margin: 1rem;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+iframe{
+  width: 100%;
+  border-radius: 15px;
+}
+
+
+@media screen and (max-width: 524px) {
+  
+  .div-curso{
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 1vh 0;
+  }
+  
+  .div-cursos h1{
+    color: white;
+    display: flex;
+    height: 5vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-inline: 3vw;
+  }
+  
+  .div-cursos p{
+    margin: 1rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+  }
+
+  iframe{
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
 /* FIN CURSOS ↑ */
 
 
@@ -212,8 +272,13 @@ a{
   justify-content: center;
   margin-inline: 25vw;
  }
+ 
+ .section-sobre-nosotros h1{
+  color: white;
+ }
 
  .section-sobre-nosotros p{
+  color: white;
   padding: 5px;
   border-radius: 15px;
   background-color: rgba(0, 128, 0, 0.361);
@@ -249,15 +314,22 @@ a{
 }
 
 .h1-contacto{
+  color: white;
   text-align: center;
   margin-bottom: 5vh;
 }
 
 .div-contacto{
+  background-color: rgba(255, 255, 255, 0.452);
+  width: 25%;
+  padding: 5px ;
+  align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: row;
   gap: 6vw;
+  margin-inline: auto;
+  border-radius: 15px;
 }
 
 .svg-contacto{
@@ -271,6 +343,7 @@ a{
 
 @media screen and (max-width: 524px) {
   .div-contacto{
+  width: 85%;
     gap: 12vw;
   }
 
@@ -289,7 +362,7 @@ a{
 
 
 
-
+/* INICIO FORMULARIO CONSULTA ↓ */
  .section-formulario{
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -344,3 +417,4 @@ a{
 .contact-form button:hover {
   background: #218838;
 }
+/* FIN FORMULARIO CONSULTA ↑ */
