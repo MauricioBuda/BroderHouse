@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "sweetalert2": "^11.12.2"
   }
 }
