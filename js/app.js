@@ -13,7 +13,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const templateParams = {
         from_name: name,
         to_name: 'Mauricio Ariel Buda',
-        phone: phone,
+        cellphone: phone,
         message: message,
         from_email: mail,
     };
