@@ -26,13 +26,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
     // Función para vaciar campos
-    function vaciarCamposFormulario(){
-        name = document.getElementById('name').value = "";
-        phone = document.getElementById('phone').value = "";
-        message = document.getElementById('message').value = "";
-        mail = document.getElementById('email').value = "";
+    function vaciarCamposFormulario() {
+        document.getElementById('name').value = "";
+        document.getElementById('phone').value = "";
+        document.getElementById('message').value = "";
+        document.getElementById('email').value = "";
     } 
-
 
 
 
@@ -49,7 +48,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
               });
 
               vaciarCamposFormulario();
-              
+
         }, function(error) {
             console.log('FAILED...', error);
             Swal.fire({
