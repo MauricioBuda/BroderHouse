@@ -9,6 +9,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const message = document.getElementById('message').value;
     const mail = document.getElementById('email').value;
 
+
+
+
+
     // Crear el objeto del correo electrónico
     const templateParams = {
         from_name: name,
@@ -17,6 +21,20 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         message: message,
         from_email: mail,
     };
+
+
+
+
+    // Función para vaciar campos
+    function vaciarCamposFormulario(){
+        name = document.getElementById('name').value = "";
+        phone = document.getElementById('phone').value = "";
+        message = document.getElementById('message').value = "";
+        mail = document.getElementById('email').value = "";
+    } 
+
+
+
 
     // Enviar el correo electrónico
     emailjs.send('service_5y2quzg', 'template_7c5puch', templateParams)
@@ -29,6 +47,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
                 showConfirmButton: false,
                 timer: 1500
               });
+
+              vaciarCamposFormulario();
+              
         }, function(error) {
             console.log('FAILED...', error);
             Swal.fire({
