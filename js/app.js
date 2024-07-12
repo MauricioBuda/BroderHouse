@@ -42,7 +42,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
                 position: "center",
                 icon: "success",
                 title: "¡Correo enviado!",
-                text: "Muchas gracias, te responderemos a la brevedad",
+                text: "Muchas gracias, te responderemos a la brevedad 🤘",
                 showConfirmButton: false,
                 timer: 1500
               });
