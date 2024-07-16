@@ -1,5 +1,11 @@
 import Swal from 'sweetalert2'
 
+
+
+
+
+
+// EMPIEZA TODO LO DE ENVIAR MAIL DE CONSULTAS ↓
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -55,3 +61,15 @@ document.getElementById('contactForm').addEventListener('submit', function(event
               });
         });
 });
+// TERMINA TODO LO DE ENVIAR MAIL DE CONSULTAS ↑
+
+
+
+
+
+
+
+
+
+// DECLARACIÓN DE VARIABLES Y ASIGNACIÓN DE EVENTOS
+let botonMiCUenta = document.getElementById("boton-mi-cuenta");

@@ -99,12 +99,14 @@ a{
   list-style: none;
 }
 
-.ul-menu li a{
+.ul-menu li a, .ul-menu li button{
   font-size: 1.5vw;
   color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
-.ul-menu li a:hover{
+.ul-menu li a:hover, .ul-menu li button:hover{
   text-shadow: 
   0px 0px 20px yellow,
   0px 0px 25px yellow;
@@ -141,6 +143,28 @@ a{
 }
 /* FIN NAV BAR ↑ */
 
+
+
+
+
+
+
+
+
+
+/* INICIO MI CUENTA ↓*/
+.section-mi-cuenta{
+  position: absolute;
+  background-color: yellow;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  height: 30vh;
+  z-index: 5;
+
+}
+/* FIN MI CUENTA ↑ */
 
 
 
