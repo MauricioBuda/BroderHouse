@@ -89,6 +89,13 @@ let contacto = document.getElementById("contacto");
 
 let botonMiCuenta = document.getElementById("boton-mi-cuenta");
 
+let botonConsulta = document.getElementById("boton-consulta");
+botonConsulta.addEventListener("click", mostrarOcultarSeccionFormularioConsulta);
+let formularioConsulta = document.getElementById("formulario-consulta");
+
+let botonXForm = document.getElementById("button-x-fomrulario");
+botonXForm.addEventListener("click", mostrarOcultarSeccionFormularioConsulta);
+
 
 
 
@@ -103,7 +110,19 @@ function mostrarOcultarSeccionCuenta () {
   sobreNosotros.classList.toggle("aplicar-borroso");
   contacto.classList.toggle("aplicar-borroso");
 
-  botonMiCUenta.disabled = !botonMiCUenta.disabled;
+  botonMiCuenta.disabled = !botonMiCUenta.disabled;
+}
 
+// Función para mostrar la sección de cuenta
+function mostrarOcultarSeccionFormularioConsulta () {
 
+  formularioConsulta.classList.toggle("aplicar-display-none");
+
+  navbar.classList.toggle("aplicar-borroso");
+  videoBg.classList.toggle("aplicar-borroso");
+  cursos.classList.toggle("aplicar-borroso");
+  sobreNosotros.classList.toggle("aplicar-borroso");
+  contacto.classList.toggle("aplicar-borroso");
+
+  botonMiCuenta.disabled = !botonMiCUenta.disabled;
 }

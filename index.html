@@ -184,7 +184,8 @@
       <div class="div-contacto">
         <a target="_blank" href="https://wa.link/9n9iqw"><img class="svg-contacto" src="assets/whatsapp.svg" alt="WP"></a>
         <a target="_blank" href="https://www.instagram.com/"><img class="svg-contacto" src="assets/instagram.svg" alt="IG"></a>
-        <a target="_blank" href="mailto:broderhouse@gmail.com?subject=Consulta sobre tatoo &body=Nombre: %0A%0A Apellido: %0A%0A Celular: %0A%0A Ciudad: %0A%0A Consulta: %0A%0A"><img class="svg-contacto" src="assets/envelope.svg" alt="MAIL"></a>
+        <button id="boton-consulta"><img class="svg-contacto" src="assets/envelope.svg" alt="MAIL"></button>
+        <!-- <a target="_blank" href="mailto:broderhouse@gmail.com?subject=Consulta sobre tatoo &body=Nombre: %0A%0A Apellido: %0A%0A Celular: %0A%0A Ciudad: %0A%0A Consulta: %0A%0A"><img class="svg-contacto" src="assets/envelope.svg" alt="MAIL"></a> -->
       </div>
      </section>
     <!-- FIN CONTACTO ↑ -->
@@ -194,9 +195,11 @@
 
 
 
-<section class="section-formulario">
-  <div class="contact-form">
+<section id="formulario-consulta" class="section-formulario aplicar-display-none">
+
     <h2>Tu consulta no molesta!</h2>
+    <button  id="button-x-fomrulario" class="button-x-form"> X </button>
+
     <form class="form-formulario" id="contactForm">
 
         <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
@@ -207,12 +210,12 @@
 
         <textarea id="message" name="message" rows="5" placeholder="Tu Consulta" required></textarea>
 
-        <p>Te responderemos lo más pronto posible</p>
+        <p class="p-formulario">Te responderemos lo más pronto posible</p>
 
-        <button type="submit">ENVIAR</button>
+        <button class="boton-enviar-form" type="submit">ENVIAR</button>
 
     </form>
-</div>
+
 </section>
 
 
