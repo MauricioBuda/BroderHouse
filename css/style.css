@@ -617,7 +617,7 @@ iframe{
 @media screen and (max-width: 524px) {
   .section-formulario{
     width: 90vw;
-    height: 90vh;
+    height: 80vh;
   }
   
   .button-x-form{
