@@ -23,12 +23,12 @@
 
     <title> Broder House </title>
   </head>
-  <body>
 
 
+  <body id="body">
 
     <!-- INICIO MENÚ ↓ -->
-    <nav class="div-navbar">
+    <nav id="navbar" class="div-navbar">
       <div>
         <a href="index.html">
           <img class="logo-menu" src="assets/Logo_cortado.png" alt="logo">
@@ -67,8 +67,26 @@
 
 
     <!-- EMPIEZA MI CUENTA ↓ -->
-     <section id="section-mi-cuenta" class="section-mi-cuenta">
-      <div></div>
+     <section id="section-mi-cuenta" class="section-mi-cuenta aplicar-display-none">
+
+      <h1 class="h1-mi-cuenta"> INGRESAR </h1>
+
+      <button id="button-x-cuenta" class="button-x"> X </button>
+
+      <div class="inputs-mi-cuenta">
+        <input placeholder="Correo electrónico" type="text">
+        <input placeholder="Contraseña" type="text">
+      </div>
+      <div class="div-olvide-clave">
+        <h6 class="h6-cuenta">¿Olvidaste la clave?</h6>
+        <button class="boton-olvide-clave"> Restablecer contraseña </button>
+      </div>
+
+      <div class="div-olvide-clave">
+        <h6 class="h6-cuenta"> ¿No tenés cuenta? </h6>
+        <button class="boton-olvide-clave"> CREAR CUENTA </button>
+      </div>
+
      </section>
     <!-- EMPIEZA MI CUENTA ↑ -->
 
@@ -81,7 +99,7 @@
 
 
 <!-- INICIO VIDEO ↓ -->
-    <section class="video-container">
+    <section id="video-bg" class="video-container">
         <video autoplay muted loop id="video-inicio">
             <source src="assets/BG-Seba.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.

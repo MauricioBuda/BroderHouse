@@ -73,3 +73,37 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 // DECLARACIÓN DE VARIABLES Y ASIGNACIÓN DE EVENTOS
 let botonMiCUenta = document.getElementById("boton-mi-cuenta");
+botonMiCUenta.addEventListener("click", mostrarOcultarSeccionCuenta);
+
+let sectionCuenta = document.getElementById("section-mi-cuenta");
+
+let buttonXCuenta = document.getElementById("button-x-cuenta");
+buttonXCuenta.addEventListener("click", mostrarOcultarSeccionCuenta )
+
+
+let navbar = document.getElementById("navbar");
+let videoBg = document.getElementById("video-bg");
+let cursos = document.getElementById("cursos");
+let sobreNosotros = document.getElementById("sobre-nosotros");
+let contacto = document.getElementById("contacto");
+
+let botonMiCuenta = document.getElementById("boton-mi-cuenta");
+
+
+
+
+
+// Función para mostrar la sección de cuenta
+function mostrarOcultarSeccionCuenta () {
+  sectionCuenta.classList.toggle("aplicar-display-none");
+
+  navbar.classList.toggle("aplicar-borroso");
+  videoBg.classList.toggle("aplicar-borroso");
+  cursos.classList.toggle("aplicar-borroso");
+  sobreNosotros.classList.toggle("aplicar-borroso");
+  contacto.classList.toggle("aplicar-borroso");
+
+  botonMiCUenta.disabled = !botonMiCUenta.disabled;
+
+
+}
