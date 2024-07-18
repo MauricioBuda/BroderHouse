@@ -34,7 +34,7 @@ a{
 }
 
 .aplicar-borroso{
-  filter: blur(20px);
+  filter: blur(25px);
 }
 /* CLASES PARA SACAR/PONER CON JS ↑ */
 
