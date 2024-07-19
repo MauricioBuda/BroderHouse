@@ -332,6 +332,10 @@ a{
   }
 
 .div-curso{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.171);
   width: 30%;
   padding: 1rem;
@@ -358,11 +362,23 @@ a{
   color: white;
 }
 
-iframe{
+.iframe-videos{
   width: 100%;
   border-radius: 15px;
 }
 
+.boton-acceder-curso{
+  font-weight: bold;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.694);
+  width: 50%;
+  border-radius: 15px;
+}
+
+.boton-acceder-curso:hover{
+  background-color: rgba(255, 255, 255, 0.956);
+  box-shadow: 1px 1px 10px yellow;
+}
 
 @media screen and (max-width: 524px) {
   
@@ -392,7 +408,7 @@ iframe{
     color: white;
   }
 
-  iframe{
+  .iframe-videos{
     width: 100%;
     border-radius: 15px;
   }
@@ -416,13 +432,13 @@ iframe{
   text-align: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 60vh;
+  margin-top: 30vh;
   text-align: center;
   justify-content: center;
   margin-inline: 25vw;
  }
  
- .section-sobre-nosotros h1{
+ .section-sobre-nosotros h1, .section-sobre-nosotros h6{
   color: white;
  }
 
@@ -430,7 +446,7 @@ iframe{
   color: white;
   padding: 5px;
   border-radius: 15px;
-  background-color: rgba(0, 128, 0, 0.361);
+  background-color: rgba(255, 255, 255, 0.065);
   justify-content: center;
   width: 60%;
   display: flex;
@@ -438,11 +454,21 @@ iframe{
   align-items: center;
  }
 
+ .iframe-geo{
+  border-radius: 15px;
+  width: 60%;
+  height: 20vh;
+ }
+
  @media screen and (max-width: 524px) {
   .section-sobre-nosotros{
     margin-inline: 3vw;
   }
   .section-sobre-nosotros p{
+    width: 80%;
+   }
+
+   .iframe-geo{
     width: 80%;
    }
  }
